@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 擔杮岅 (擔杮) resources
+// 日语(日本) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
 LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
@@ -1497,12 +1497,12 @@ BEGIN
     IDS_REG_ENTRY_MX        "mx_icon"
 END
 
-#endif    // 擔杮岅 (擔杮) resources
+#endif    // 日语(日本) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// 塸岅 (暷崙) resources
+// 英语(美国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
@@ -2015,26 +2015,26 @@ BEGIN
     CONTROL         "Wk",IDC_ACPI_WAKE_,"Button",BS_OWNERDRAW,358,142,17,16
 END
 
-IDD_PROPERTIES DIALOGEX 0, 0, 422, 279
+IDD_PROPERTIES DIALOGEX 0, 0, 491, 348
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Properties"
 FONT 8, "Tahoma", 0, 0, 0x1
 BEGIN
-    COMBOBOX        IDC_APPLICATION,7,7,320,246,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    CONTROL         "Use Default Setting",IDC_SETTING_DEFAULT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,338,7,77,10
-    CONTROL         "Use Specific Setting",IDC_SETTING_SPECIFIC,"Button",BS_AUTORADIOBUTTON,338,16,80,10
-    CONTROL         "Disable XKeymacs",IDC_SETTING_DISABLE,"Button",BS_AUTORADIOBUTTON,338,25,75,10
-    CONTROL         "",IDC_TAB,"Static",SS_BLACKFRAME | WS_GROUP,7,39,411,213
+    COMBOBOX        IDC_APPLICATION,55,7,320,246,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use Default Setting",IDC_SETTING_DEFAULT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,406,7,77,10
+    CONTROL         "Use Specific Setting",IDC_SETTING_SPECIFIC,"Button",BS_AUTORADIOBUTTON,406,16,80,10
+    CONTROL         "Disable XKeymacs",IDC_SETTING_DISABLE,"Button",BS_AUTORADIOBUTTON,406,26,75,10
+    CONTROL         "",IDC_TAB,"Static",SS_BLACKFRAME | WS_GROUP,7,39,480,213
     CONTROL         "Use Dialog setting for all dialogs",IDC_USE_DIALOG_SETTING,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,25,115,10
-    PUSHBUTTON      "Load Default",IDC_LOAD_DEFAULT,3,260,50,14
-    PUSHBUTTON      "Select All",IDC_SELECT_ALL,59,260,50,14
-    PUSHBUTTON      "Clear All",IDC_CLEAR_ALL,116,260,50,14
-    DEFPUSHBUTTON   "OK",IDOK,254,260,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,311,260,50,14
-    PUSHBUTTON      "&Apply",IDC_APPLY,368,260,50,14
-    LTEXT           "kill-ring-max: ",IDC_STATIC,262,26,41,8
-    EDITTEXT        IDC_KILL_RING_MAX,306,24,20,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+    PUSHBUTTON      "Load Default",IDC_LOAD_DEFAULT,3,329,50,14
+    PUSHBUTTON      "Select All",IDC_SELECT_ALL,59,329,50,14
+    PUSHBUTTON      "Clear All",IDC_CLEAR_ALL,116,329,50,14
+    DEFPUSHBUTTON   "OK",IDOK,323,329,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,380,329,50,14
+    PUSHBUTTON      "&Apply",IDC_APPLY,437,329,50,14
+    LTEXT           "kill-ring-max: ",IDC_STATIC,310,26,41,8
+    EDITTEXT        IDC_KILL_RING_MAX,354,24,20,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
     EDITTEXT        IDC_WINDOW_TEXT,150,25,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
     LTEXT           "Use if the window title is ",IDC_STATIC,67,32,78,8,NOT WS_VISIBLE
 END
@@ -2123,10 +2123,10 @@ BEGIN
     CONTROL         "M-c",IDC_MC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,298,173,29,10
 END
 
-IDD_PROPERTIES_ADVANCED DIALOG 0, 0, 408, 202
+IDD_PROPERTIES_ADVANCED DIALOGEX 0, 0, 408, 202
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Advanced"
-FONT 8, "Tahoma"
+FONT 8, "Tahoma", 0, 0, 0x0
 BEGIN
     LTEXT           "&Category:",IDC_STATIC,7,7,31,8
     COMBOBOX        IDC_CATEGORY,7,17,106,132,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
@@ -2197,9 +2197,9 @@ BEGIN
     IDD_PROPERTIES, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 418
+        RIGHTMARGIN, 487
         TOPMARGIN, 7
-        BOTTOMMARGIN, 274
+        BOTTOMMARGIN, 343
     END
 
     IDD_PROPERTIES_BASIC, DIALOG
@@ -2332,21 +2332,37 @@ END
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\xkeymacs.ico"
+
 IDR_MAIN_DISABLE_WOCQ   ICON                    "res\\disableWOCQ.ico"
+
 IDI_CTRL_ON             ICON                    "res\\ctrl_on.ico"
+
 IDI_CTRL_OFF            ICON                    "res\\ctrl_off.ico"
+
 IDI_CX_ON               ICON                    "res\\cx_on.ico"
+
 IDI_CX_OFF              ICON                    "res\\cx_off.ico"
+
 IDI_SHIFT_ON            ICON                    "res\\shift_on.ico"
+
 IDI_SHIFT_OFF           ICON                    "res\\shift_of.ico"
+
 IDI_ALT_ON              ICON                    "res\\alt_on.ico"
+
 IDI_ALT_OFF             ICON                    "res\\alt_off.ico"
+
 IDI_META_ON             ICON                    "res\\meta_on.ico"
+
 IDI_META_OFF            ICON                    "res\\meta_off.ico"
+
 IDR_MAIN_DISABLE        ICON                    "res\\disable.ico"
+
 IDR_MAIN_DISABLE_TMP    ICON                    "res\\disableTMP.ico"
+
 IDI_MX_ON               ICON                    "res\\mx_on.ico"
+
 IDI_MX_OFF              ICON                    "res\\mx_off.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -2414,10 +2430,15 @@ END
 //
 
 IDC_HAND_CURSOR         CURSOR                  "res\\hand.cur"
+
 IDC_DRAG_CURSOR         CURSOR                  "res\\drag.cur"
+
 IDC_DISABLE_CURSOR      CURSOR                  "res\\disable_.cur"
+
 IDC_DISABLE_WOCQ_CURSOR CURSOR                  "res\\disable_wocq.cur"
+
 IDC_DISABLE_TMP_CURSOR  CURSOR                  "res\\disable_tmp.cur"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -2425,7 +2446,25 @@ IDC_DISABLE_TMP_CURSOR  CURSOR                  "res\\disable_tmp.cur"
 //
 
 IDB_SORT_ASCENDING      BITMAP                  "res\\sort_asc.bmp"
+
 IDB_SORT_DESCENDING     BITMAP                  "res\\sort_des.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PROPERTIES_ADVANCED AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -3169,7 +3208,7 @@ BEGIN
     IDS_REG_ENTRY_MX        "mx_icon"
 END
 
-#endif    // 塸岅 (暷崙) resources
+#endif    // 英语(美国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
